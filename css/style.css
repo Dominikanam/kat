@@ -77,7 +77,7 @@ body {
   padding: 0;
   position: relative;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 h1 {
@@ -236,17 +236,28 @@ section.services ul {
 }
 
 section.services ul li {
-  border-left: 2px solid white;
+  border-left: 1px solid white;
   float: none;
-  padding: 10px;
+  padding: 10px 10px 38px;
+  position: relative;
 }
 
 section.services ul li:last-of-type {
-  border-right: 2px solid white;
+  border-right: 1px solid white;
 }
 
 section.services ul li img {
   padding: 15px;
+}
+
+section.services ul li h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  color: white;
 }
 
 section.services ul h4 {
@@ -262,6 +273,13 @@ section.services ul p {
   text-align: justify;
   padding-top: 10px;
   color: #dbb3ce;
+}
+
+section.services .rates h3 {
+  color: #f5f579;
+  margin: 30px;
+  line-height: 10px;
+  font-size: 15px;
 }
 
 section.happyClients {
@@ -370,7 +388,7 @@ footer h3 {
 }
 
 footer p {
-  font-size: 12px;
+  font-size: 15px;
   color: purple;
   margin-right: 60px;
 }
