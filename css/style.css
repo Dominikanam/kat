@@ -1,1 +1,400 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+[class*=col-] {
+  float: left;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.row::before,
+.row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+body {
+  background-color: #491c49;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  padding: 0;
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+}
+
+h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  padding-top: 50px;
+  color: #491c49;
+  text-shadow: 0 0 3px #c04dba;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 50%;
+  color: white;
+}
+
+button {
+  background-color: #491c49;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 40px;
+  width: 200px;
+  border-radius: 3px;
+  margin: 50px auto;
+  display: block;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #e6e636;
+}
+
+nav .logo {
+  display: inline-block;
+  height: 50px;
+}
+
+nav .logo img {
+  height: 60px;
+  padding: 10px;
+}
+
+nav .menu {
+  float: right;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+nav .menu ul li {
+  list-style: none;
+  padding: 10px;
+  display: inline-block;
+  height: 72px;
+}
+
+nav .menu ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+nav .menu ul li a:hover {
+  color: #e6e636;
+}
+
+header {
+  background-image: linear-gradient(rgba(161, 76, 143, 0.8), rgba(65, 29, 52, 0.7)), url(/images/ocean.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+header .title1 {
+  padding: 60px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 30px;
+  text-shadow: 0 3px 5px #c04dba;
+}
+
+header .title2 {
+  color: white;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 3px 5px #c04dba;
+}
+
+header p {
+  box-shadow: 0 0 5px white;
+  padding: 50px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background: #491c49;
+  opacity: 0.6;
+}
+
+section.about {
+  background-color: white;
+  text-align: center;
+}
+
+section.about div {
+  padding: 50px;
+}
+
+section.about div p {
+  text-align: left;
+  color: purple;
+  font-size: 20px;
+}
+
+section.about div button {
+  float: left;
+}
+
+section.about div .video img {
+  height: 350px;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.5), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section.services {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+section.services h1 {
+  font-size: 35px;
+  line-height: 40px;
+  color: white;
+  text-transform: uppercase;
+}
+
+section.services h2 {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  color: #dbb3ce;
+  padding-bottom: 30px;
+}
+
+section.services ul {
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.services ul li {
+  border-left: 2px solid white;
+  float: none;
+  padding: 10px;
+}
+
+section.services ul li:last-of-type {
+  border-right: 2px solid white;
+}
+
+section.services ul li img {
+  padding: 15px;
+}
+
+section.services ul h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px;
+  color: white;
+}
+
+section.services ul p {
+  font-weight: lighter;
+  font-size: 12px;
+  text-align: justify;
+  padding-top: 10px;
+  color: #dbb3ce;
+}
+
+section.happyClients {
+  background-color: white;
+  text-align: center;
+}
+
+section.happyClients .joy {
+  margin: 20px;
+  height: 300px;
+  width: 500px;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.5), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section.happyClients h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: purple;
+}
+
+section.happyClients h4 {
+  color: purple;
+}
+
+section.happyClients img {
+  padding: 20px;
+  height: 80px;
+}
+
+section.happyClients p {
+  font-style: italic;
+  padding-bottom: 50px;
+}
+
+section.contact {
+  background-color: #491c49;
+  text-align: center;
+}
+
+section.contact h1 {
+  color: white;
+}
+
+section.contact h2 {
+  color: #dbb3ce;
+  font-size: 12px;
+  padding: 10px;
+}
+
+section.contact form {
+  padding: 50px;
+  max-width: 700px;
+}
+
+section.contact form .person, section.contact form .subject, section.contact form .message {
+  padding: 20px;
+}
+
+section.contact form input {
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 100%;
+  outline: none;
+}
+
+section.contact form button {
+  background-color: white;
+  color: #491c49;
+}
+
+footer {
+  background-color: white;
+  border: 1px solid pink;
+  color: purple;
+  padding: 50px !important;
+}
+
+footer .socialPanel {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .socialPanel .icon-btn {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: #491c49;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+footer .socialPanel .icon-btn:hover {
+  background-color: white;
+  color: #491c49;
+  border: 1px solid #491c49;
+}
+
+footer h3 {
+  text-transform: uppercase;
+}
+
+footer p {
+  font-size: 12px;
+  color: purple;
+  margin-right: 60px;
+}
+
+footer .subscribe {
+  background-color: #491c49;
+  border-radius: 5px;
+}
+
+footer .subscribe input, footer .subscribe button {
+  display: block;
+  border: none;
+  margin: 40px auto;
+}
+
+footer .subscribe input {
+  text-align: center;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+footer .subscribe button {
+  background-color: white;
+  color: #491c49;
+}
+/*# sourceMappingURL=style.css.map */
